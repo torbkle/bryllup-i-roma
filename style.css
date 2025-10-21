@@ -12,9 +12,9 @@ body {
   overflow: hidden;
 }
 
-/* Postkortforside */
-#postcard {
-  background: url('images/postkort.jpg') no-repeat center center;
+/* Forseglet brev */
+#sealedLetter {
+  background: url('images/brev-med-segl.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -23,18 +23,19 @@ body {
   align-items: center;
 }
 
-#openBtn {
+#breakSeal {
   margin-top: 2rem;
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background-color: #ff914d;
+  background-color: #8b0000;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   cursor: pointer;
 }
 
-/* Invitasjonsside */
+/* Invitasjon */
 #invitasjon {
   background: url('https://source.unsplash.com/1600x900/?rome,wedding') no-repeat center center fixed;
   background-size: cover;
