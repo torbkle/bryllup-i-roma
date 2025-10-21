@@ -1,3 +1,4 @@
+// Nedtelling
 const countdown = document.getElementById("countdown");
 const targetDate = new Date("June 19, 2026 15:00:00").getTime();
 
@@ -21,10 +22,20 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// Mute-knapp
+// Åpne invitasjon og start musikk
+const openBtn = document.getElementById("openBtn");
+const postcard = document.getElementById("postcard");
+const invitasjon = document.getElementById("invitasjon");
 const bgMusic = document.getElementById("bgMusic");
-const muteBtn = document.getElementById("muteBtn");
 
+openBtn.addEventListener("click", () => {
+  postcard.style.display = "none";
+  invitasjon.style.display = "flex";
+  bgMusic.play();
+});
+
+// Mute-knapp
+const muteBtn = document.getElementById("muteBtn");
 muteBtn.addEventListener("click", () => {
   bgMusic.muted = !bgMusic.muted;
   muteBtn.textContent = bgMusic.muted ? "🔇" : "🔊";
