@@ -22,8 +22,8 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// Åpne invitasjon og start musikk
-const breakSeal = document.getElementById("breakSeal");
+// Åpne invitasjon og start musikk ved klikk på bildet
+const breakSeal = document.getElementById("breakSeal"); // Dette er bildet
 const sealedLetter = document.getElementById("sealedLetter");
 const invitasjon = document.getElementById("invitasjon");
 const bgMusic = document.getElementById("bgMusic");
