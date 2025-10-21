@@ -23,13 +23,13 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 // Åpne invitasjon og start musikk
-const openBtn = document.getElementById("openBtn");
-const postcard = document.getElementById("postcard");
+const breakSeal = document.getElementById("breakSeal");
+const sealedLetter = document.getElementById("sealedLetter");
 const invitasjon = document.getElementById("invitasjon");
 const bgMusic = document.getElementById("bgMusic");
 
-openBtn.addEventListener("click", () => {
-  postcard.style.display = "none";
+breakSeal.addEventListener("click", () => {
+  sealedLetter.style.display = "none";
   invitasjon.style.display = "flex";
   bgMusic.play();
 });
