@@ -5,11 +5,39 @@
 }
 
 body {
-  background: url('https://source.unsplash.com/1600x900/?rome,wedding') no-repeat center center fixed;
-  background-size: cover;
   font-family: 'Helvetica Neue', sans-serif;
   color: white;
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Postkortforside */
+#postcard {
+  background: url('images/postkort.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#openBtn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Invitasjonsside */
+#invitasjon {
+  background: url('https://source.unsplash.com/1600x900/?rome,wedding') no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
