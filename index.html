@@ -7,18 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="overlay">
-    <h1>Ciao bella!</h1>
-    <p>Du er invitert til Torbjørn & Ursulas bryllup i Roma – med sol, prosecco og null dresskodepanikk.</p>
-    <div id="countdown"></div>
-    <button id="muteBtn">🔇</button>
+  <!-- Postkortforside -->
+  <div id="postcard">
+    <img src="images/postkort.jpg" alt="Postkort" />
+    <button id="openBtn">📬 Åpne invitasjonen</button>
   </div>
 
-  <audio id="bgMusic" autoplay loop>
-  <source src="audio/ci-sara.mp3" type="audio/mpeg" />
-  Din nettleser støtter ikke lydavspilling.
-</audio>
+  <!-- Invitasjonsside -->
+  <div id="invitasjon" style="display:none;">
+    <div class="overlay">
+      <h1>Ciao bella!</h1>
+      <p>Du er invitert til Torbjørn & Ursulas bryllup i Roma – med sol, prosecco og null dresskodepanikk.</p>
+      <div id="countdown"></div>
+      <button id="muteBtn">🔇</button>
+    </div>
+  </div>
 
+  <!-- Musikk -->
+  <audio id="bgMusic" loop>
+    <source src="audio/ci_sara.mp3" type="audio/mpeg" />
+  </audio>
 
   <script src="countdown.js"></script>
 </body>
